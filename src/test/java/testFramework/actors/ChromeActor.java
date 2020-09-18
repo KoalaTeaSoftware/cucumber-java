@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import testFramework.Context;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 public class ChromeActor extends Actor {
 
@@ -83,6 +84,6 @@ public class ChromeActor extends Actor {
         driver = new ChromeDriver(options);
 
 // todo - this causes it to just hang, so find out why and replace it with a correct code to set the implicit waits
-//        driver.manage().timeouts().implicitlyWait(ContextOfTest.implicitWait, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Context.implicitWait, TimeUnit.SECONDS);
     }
 }

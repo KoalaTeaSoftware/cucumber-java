@@ -9,10 +9,48 @@ formatter.feature({
     }
   ]
 });
+formatter.scenarioOutline({
+  "name": "Visit a page",
+  "description": "  This page is fairly fast, so it should give a quick test",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "I navigate to the page \"\u003caddress\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the page title is \"\u003ctitle\u003e\"",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "address",
+        "title"
+      ]
+    },
+    {
+      "cells": [
+        "http://koalateasoftware.com",
+        "Home"
+      ]
+    },
+    {
+      "cells": [
+        "http://koalateasoftware.com/projects",
+        "Projects"
+      ]
+    }
+  ]
+});
 formatter.scenario({
   "name": "Visit a page",
-  "description": "    This page is fairly fast, so it should give a quick test",
-  "keyword": "Scenario",
+  "description": "  This page is fairly fast, so it should give a quick test",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@smoke"
@@ -34,6 +72,42 @@ formatter.result({
 });
 formatter.step({
   "name": "the page title is \"Home\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "testFramework.steps.basic.thePageTitleIs(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Visit a page",
+  "description": "  This page is fairly fast, so it should give a quick test",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@smoke"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to the page \"http://koalateasoftware.com/projects\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "testFramework.steps.basic.iNavigateToThePage(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the page title is \"Projects\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -87,7 +161,7 @@ formatter.match({
   "location": "testFramework.steps.basic.thePageTitleIs(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: The page title is not as expected expected:\u003c[qwertyuiop]\u003e but was:\u003c[Home]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat testFramework.steps.basic.thePageTitleIs(basic.java:58)\r\n\tat ✽.the page title is \"qwertyuiop\"(file:///D:/Web%20Site%20Work/cucumberframe/cucumber-java/src/test/features/framework/smoke.feature:13)\r\n",
+  "error_message": "org.junit.ComparisonFailure: The page title is not as expected expected:\u003c[qwertyuiop]\u003e but was:\u003c[Home]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat testFramework.steps.basic.thePageTitleIs(basic.java:32)\r\n\tat ✽.the page title is \"qwertyuiop\"(file:///D:/Web%20Site%20Work/cucumberframe/cucumber-java/src/test/features/framework/smoke.feature:19)\r\n",
   "status": "failed"
 });
 formatter.step({

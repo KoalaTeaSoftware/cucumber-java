@@ -50,7 +50,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                4,
+                6,
                 1,
                 1,
                 0,
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,7 +106,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
+                2,
                 1
             ],
             backgroundColor: [
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Koala Tea Software  - Cucumber Frame</td>
         <td>0.1</td>
-      <td>17 Sep 2020, 10:06</td>
+      <td>18 Sep 2020, 08:39</td>
     </tr>
   </tbody>
 </table>
@@ -327,18 +327,18 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_3472588999.html">Framework capabilities</a></td>
 
-        <td      class="passed"    >4</td>
+        <td      class="passed"    >6</td>
         <td      class="failed"    >1</td>
         <td     class="skipped"   >1</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">6</td>
+        <td class="total">8</td>
 
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >2</td>
         <td  class="failed"    >1</td>
-        <td class="total">2</td>
+        <td class="total">3</td>
 
-        <td class="duration" data-value="2353877700">2.353</td>
+        <td class="duration" data-value="3624663700">3.624</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -346,30 +346,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>4</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
       <td>6</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8</td>
 
-      <td>1</td>
-      <td>1</td>
       <td>2</td>
+      <td>1</td>
+      <td>3</td>
 
-      <td class="duration">2.353</td>
+      <td class="duration">3.624</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>66.67%</td>
-      <td>16.67%</td>
-      <td>16.67%</td>
+      <td>75.00%</td>
+      <td>12.50%</td>
+      <td>12.50%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>50.00%</td>
-      <td>50.00%</td>
+      <td>66.67%</td>
+      <td>33.33%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

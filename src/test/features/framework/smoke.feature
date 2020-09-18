@@ -2,10 +2,16 @@
 Feature: Framework capabilities
   These scenarios smoke-test features of the test framework
 
-  Scenario: Visit a page
+  Scenario Outline: Visit a page
   This page is fairly fast, so it should give a quick test
-    When I navigate to the page "http://koalateasoftware.com"
-    Then the page title is "Home"
+#    Given the default scheme is http
+#    And the default domain is koalateasoftware.com
+    When I navigate to the page "<address>"
+    Then the page title is "<title>"
+    Examples:
+      | address                              | title    |
+      | http://koalateasoftware.com          | Home     |
+      | http://koalateasoftware.com/projects | Projects |
 
   Scenario: Fail a test with an interesting screen grab
     When I navigate to the page "http://koalateasoftware.com"

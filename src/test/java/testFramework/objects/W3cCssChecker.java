@@ -7,14 +7,14 @@ import testFramework.Context;
 
 import java.time.Duration;
 
-public class W3cCssValidator {
+public class W3cCssChecker {
     /**
      * It is best to aim this directly at the single files that you create.
      * For example, Bootstrap's css invokes error messages (false negatives?) from this tester.
      *
      * @param urlOfCssFile - make it a single file.Scheme is not necessary
      */
-    public W3cCssValidator(String urlOfCssFile) {
+    public W3cCssChecker(String urlOfCssFile) {
         String fullUrl = "http://jigsaw.w3.org/css-validator/validator?uri=";
         fullUrl += urlOfCssFile;
         fullUrl += "&profile=css3svg&usermedium=all&warning=1&vextwarning=";
@@ -35,16 +35,6 @@ public class W3cCssValidator {
         String resultString = Context.driver.findElement(By.tagName("H3")).getText();
 
         return resultString.contains("No Error Found");
-    }
-
-    /**
-     * "Absence of evidence" != "Evidence of absence"
-     * In case you don't want to rely on simply the inverse of the 'is valid' test, this specifically looks for appropriate text
-     *
-     * @return - whether it contains text that indicates success, or failure
-     */
-    public Boolean fileFailsValidation() {
-        String resultString = Context.driver.findElement(By.tagName("H3")).getText();
-        return resultString.contains("We found the following errors");
+        // the alternative text is "We found the following errors"
     }
 }

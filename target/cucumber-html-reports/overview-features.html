@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                6,
+                5,
                 1,
-                1,
+                0,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Koala Tea Software  - Cucumber Frame</td>
         <td>0.1</td>
-      <td>18 Sep 2020, 08:39</td>
+      <td>19 Sep 2020, 08:10</td>
     </tr>
   </tbody>
 </table>
@@ -325,20 +325,20 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_3472588999.html">Framework capabilities</a></td>
+        <td class="tagname"><a href="report-feature_1286834478.html">Standards Compliance</a></td>
 
-        <td      class="passed"    >6</td>
+        <td      class="passed"    >5</td>
         <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">8</td>
+        <td >0</td>
+        <td class="total">6</td>
 
         <td  class="passed"    >2</td>
         <td  class="failed"    >1</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="3624663700">3.624</td>
+        <td class="duration" data-value="40867033900">40.867</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -346,25 +346,25 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>6</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>8</td>
 
       <td>2</td>
       <td>1</td>
       <td>3</td>
 
-      <td class="duration">3.624</td>
+      <td class="duration">40.867</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>75.00%</td>
-      <td>12.50%</td>
-      <td>12.50%</td>
+      <td>83.33%</td>
+      <td>16.67%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>

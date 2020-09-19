@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Koala Tea Software  - Cucumber Frame</td>
         <td>0.1</td>
-      <td>18 Sep 2020, 08:39</td>
+      <td>19 Sep 2020, 08:10</td>
     </tr>
   </tbody>
 </table>
@@ -117,24 +117,24 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3472588999.html">Framework capabilities</a>
+      <a href="report-feature_1286834478.html">Standards Compliance</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_197329173.html">@standards</a>
 </div>
 
 
-  <span class="lead-duration duration">1.178</span>
+  <span class="lead-duration duration">30.859</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Fail a test with an interesting screen grab</span>
+  <span class="name">HTML Compliance with W3C standards</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -165,7 +165,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">testFramework.Hooks.beforeScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.079</span>
+  <span class="lead-duration duration">3.047</span>
 
           </div>
 
@@ -198,38 +198,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I navigate to the page <span class="argument">&quot;http://koalateasoftware.com&quot;</span></span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the w3C HTML tester reviews the file <span class="argument">&quot;http://koalateasoftware.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.015</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I write to the html report <span class="argument">&quot;The following step will cause the scenario to fail. &quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.802</span>
 
 </div>
 
@@ -243,18 +216,6 @@ $(document).ready(function() {
 
 
 
-  <div class="outputs inner-level">
-      <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-4" class="collapse collapsable-details " >
-          
-          <pre><p>The following step will cause the scenario to fail. </p></pre>
-        </div>
-      </div>
-  </div>
 
 
 
@@ -266,9 +227,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">the page title is <span class="argument">&quot;qwertyuiop&quot;</span></span>
+  <span class="name">the w3c HTML tester reports compliance</span>
 
-  <span class="lead-duration duration">1.162</span>
+  <span class="lead-duration duration">30.057</span>
 
 </div>
 
@@ -279,45 +240,40 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
-          <a>org.junit.ComparisonFailure:</a>
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>org.junit.ComparisonFailure: The page title is not as expected expected:&lt;[qwertyuiop]&gt; but was:&lt;[Home]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at testFramework.steps.basic.thePageTitleIs(basic.java:32)
-	at &#10045;.the page title is &quot;qwertyuiop&quot;(file:///D:/Web%20Site%20Work/cucumberframe/cucumber-java/src/test/features/framework/smoke.feature:19)
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.success&quot;}
+  (Session info: headless chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP-LAPTOP', ip: '192.168.1.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\goldt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56476}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2bc211dac9a82a3120417e8426e19c02
+*** Element info: {Using=class name, value=success}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testFramework.objects.W3cHtmlChecker.fileValidates(W3cHtmlChecker.java:36)
+	at testFramework.steps.HtmlSyntaxCheckSteps.theW3CHTMLTesterReportsCompliance(HtmlSyntaxCheckSteps.java:21)
+	at &#10045;.the w3c HTML tester reports compliance(file:///D:/Web%20Site%20Work/cucumberframe/cucumber-java/src/test/features/framework/standards.feature:14)
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I write to the html report <span class="argument">&quot;This step should be skipped&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
 
 
 
@@ -337,7 +293,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -349,13 +305,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">testFramework.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.965</span>
+  <span class="lead-duration duration">0.825</span>
 
           </div>
 
@@ -365,87 +321,28 @@ $(document).ready(function() {
 
   <div class="outputs inner-level">
       <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-7">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-6">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-7" class="collapse collapsable-details " >
+        <div id="output-6" class="collapse collapsable-details " >
           
-          <pre><p>&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;
-    &lt;!-- hello --&gt;
-    &lt;title&gt;Home&lt;/title&gt;
-    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;/apple-touch-icon.png&quot;&gt;
-    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;/favicon-32x32.png&quot;&gt;
-    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;/favicon-16x16.png&quot;&gt;
-    &lt;link rel=&quot;manifest&quot; href=&quot;/site.webmanifest&quot;&gt;
-    &lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;
-&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache&quot;&gt;
-&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-store&quot;&gt;
-&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;must-revalidate&quot;&gt;
-&lt;meta http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;
-&lt;meta http-equiv=&quot;Expires&quot; content=&quot;0&quot;&gt;
-
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
-&lt;!--suppress JSUnresolvedLibraryURL, SpellCheckingInspection --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; crossorigin=&quot;anonymous&quot;&gt;
-&lt;!--suppress JSUnresolvedLibraryURL, SpellCheckingInspection --&gt;
-&lt;script src=&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot; integrity=&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;!--suppress JSUnresolvedLibraryURL, SpellCheckingInspection --&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js&quot; integrity=&quot;sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;!--suppress JSUnresolvedLibraryURL, SpellCheckingInspection --&gt;
-&lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js&quot; integrity=&quot;sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;!--suppress HtmlUnknownTarget --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/index.css&quot;&gt;
-
-&lt;!--&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue&quot;&gt;&lt;/script&gt;--&gt;
-&lt;!--&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;152x152&quot; href=&quot;/apple-touch-icon.png&quot; --&gt;
-&lt;!--&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;/favicon-32x32.png&quot;&gt;--&gt;
-&lt;!--&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;/favicon-16x16.png&quot;&gt;--&gt;
-&lt;!--link rel=&quot;manifest&quot; href=&quot;/site.webmanifest&quot; &gt;--&gt;
-&lt;!--&lt;link rel=&quot;mask-icon&quot; href=&quot;/safari-pinned-tab.svg&quot;--&gt;
-&lt;/head&gt;
-&lt;body id=&quot;home&quot; class=&quot;container-fluid&quot;&gt;
-&lt;div id=&quot;furniture&quot;&gt;
-    &lt;nav id=&quot;mainNav&quot; class=&quot;nav navbar navbar-expand-lg navbar-light bg-light&quot;&gt;
-    &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Koala Tea Software&lt;/a&gt;
-    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarNavAltMarkup&quot; aria-controls=&quot;navbarNavAltMarkup&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
-        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNavAltMarkup&quot;&gt;
-        &lt;div class=&quot;navbar-nav&quot;&gt;
-            &lt;a class=&quot;nav-item nav-link&quot; id=&quot;projectsNav&quot; href=&quot;projects&quot;&gt;Projects &lt;/a&gt;        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/nav&gt;
-
-&lt;/div&gt;
-&lt;div id=&quot;contents&quot; class=&quot;container-fluid&quot;&gt;
-    &lt;div class=&quot;container-fluid&quot;&gt;
-    &lt;h1&gt;Welcome&lt;/h1&gt;
-    &lt;p&gt;I'm Mark&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;footer&quot;&gt;
-    &lt;div id=&quot;footerContents&quot; class=&quot;row&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/body&gt;&lt;/html&gt;</p></pre>
+          <pre><p>&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;link href=&quot;icon.png&quot; rel=&quot;icon&quot;&gt;&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot;&gt;&lt;title&gt;(X)HTML5 validation results for http://koalateasoftware.com&lt;/title&gt;&lt;style&gt;&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;(X)HTML5 validation results for http://koalateasoftware.com&lt;/h1&gt;&lt;form method=&quot;get&quot; class=&quot;simple&quot;&gt;&lt;fieldset&gt;&lt;legend&gt;Validator Input&lt;/legend&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr title=&quot;The document to validate.&quot;&gt;&lt;th&gt;&lt;select id=&quot;docselect&quot;&gt;&lt;option value=&quot;&quot;&gt;Address&lt;/option&gt;&lt;option value=&quot;file&quot;&gt;File Upload&lt;/option&gt;&lt;option value=&quot;textarea&quot;&gt;Text Field&lt;/option&gt;&lt;/select&gt;&lt;/th&gt;&lt;td&gt;&lt;input type=&quot;url&quot; name=&quot;doc&quot; id=&quot;doc&quot; pattern=&quot;(?:(?:https?://.+)|(?:data:.+))?&quot; title=&quot;Absolute URL (http, https or data only) of the document to be checked.&quot; tabindex=&quot;0&quot; autofocus=&quot;autofocus&quot; value=&quot;http://koalateasoftware.com&quot; aria-labelledby=&quot;docselect&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr title=&quot;Display a report about the textual alternatives for images.&quot;&gt;&lt;th&gt;&lt;/th&gt;&lt;td&gt;&lt;label for=&quot;showimagereport&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;showimagereport&quot; id=&quot;showimagereport&quot; value=&quot;yes&quot;&gt; Show Image Report&lt;/label&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr title=&quot;Display the markup source of the input document.&quot;&gt;&lt;th&gt;&lt;/th&gt;&lt;td&gt;&lt;label for=&quot;showsource&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;showsource&quot; id=&quot;showsource&quot; value=&quot;yes&quot;&gt; Show Source&lt;/label&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;td&gt;&lt;input value=&quot;Validate&quot; type=&quot;submit&quot; id=&quot;submit&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/fieldset&gt;&lt;/form&gt;&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;&lt;p&gt;&lt;input type=&quot;button&quot; value=&quot;Group Messages&quot;&gt;&lt;/p&gt;&lt;ol&gt;&lt;li class=&quot;error&quot;&gt;&lt;p&gt;&lt;strong&gt;Error&lt;/strong&gt;: &lt;span&gt;Bad value &lt;code&gt;Cache-Control&lt;/code&gt; for attribute &lt;code&gt;http-equiv&lt;/code&gt; on element &lt;a href=&quot;https://html.spec.whatwg.org/multipage/#the-meta-element&quot;&gt;&lt;code&gt;meta&lt;/code&gt;&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;location&quot;&gt;From line &lt;span class=&quot;first-line&quot;&gt;11&lt;/span&gt;, column &lt;span class=&quot;first-col&quot;&gt;1&lt;/span&gt;; to line &lt;span class=&quot;last-line&quot;&gt;11&lt;/span&gt;, column &lt;span class=&quot;last-col&quot;&gt;53&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;extract&quot;&gt;&lt;code&gt;ofollow&quot;&amp;gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&lt;b&gt;&amp;lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache&quot;/&amp;gt;&lt;/b&gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&amp;lt;meta&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;error&quot;&gt;&lt;p&gt;&lt;strong&gt;Error&lt;/strong&gt;: &lt;span&gt;Bad value &lt;code&gt;Cache-Control&lt;/code&gt; for attribute &lt;code&gt;http-equiv&lt;/code&gt; on element &lt;a href=&quot;https://html.spec.whatwg.org/multipage/#the-meta-element&quot;&gt;&lt;code&gt;meta&lt;/code&gt;&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;location&quot;&gt;From line &lt;span class=&quot;first-line&quot;&gt;12&lt;/span&gt;, column &lt;span class=&quot;first-col&quot;&gt;1&lt;/span&gt;; to line &lt;span class=&quot;last-line&quot;&gt;12&lt;/span&gt;, column &lt;span class=&quot;last-col&quot;&gt;53&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;extract&quot;&gt;&lt;code&gt;-cache&quot;/&amp;gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&lt;b&gt;&amp;lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-store&quot;/&amp;gt;&lt;/b&gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&amp;lt;meta&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;error&quot;&gt;&lt;p&gt;&lt;strong&gt;Error&lt;/strong&gt;: &lt;span&gt;Bad value &lt;code&gt;Cache-Control&lt;/code&gt; for attribute &lt;code&gt;http-equiv&lt;/code&gt; on element &lt;a href=&quot;https://html.spec.whatwg.org/multipage/#the-meta-element&quot;&gt;&lt;code&gt;meta&lt;/code&gt;&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;location&quot;&gt;From line &lt;span class=&quot;first-line&quot;&gt;13&lt;/span&gt;, column &lt;span class=&quot;first-col&quot;&gt;1&lt;/span&gt;; to line &lt;span class=&quot;last-line&quot;&gt;13&lt;/span&gt;, column &lt;span class=&quot;last-col&quot;&gt;60&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;extract&quot;&gt;&lt;code&gt;-store&quot;/&amp;gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&lt;b&gt;&amp;lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;must-revalidate&quot;/&amp;gt;&lt;/b&gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&amp;lt;meta&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;error&quot;&gt;&lt;p&gt;&lt;strong&gt;Error&lt;/strong&gt;: &lt;span&gt;Bad value &lt;code&gt;Pragma&lt;/code&gt; for attribute &lt;code&gt;http-equiv&lt;/code&gt; on element &lt;a href=&quot;https://html.spec.whatwg.org/multipage/#the-meta-element&quot;&gt;&lt;code&gt;meta&lt;/code&gt;&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;location&quot;&gt;From line &lt;span class=&quot;first-line&quot;&gt;14&lt;/span&gt;, column &lt;span class=&quot;first-col&quot;&gt;1&lt;/span&gt;; to line &lt;span class=&quot;last-line&quot;&gt;14&lt;/span&gt;, column &lt;span class=&quot;last-col&quot;&gt;46&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;extract&quot;&gt;&lt;code&gt;lidate&quot;/&amp;gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&lt;b&gt;&amp;lt;meta http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;/&amp;gt;&lt;/b&gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&amp;lt;meta&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;error&quot;&gt;&lt;p&gt;&lt;strong&gt;Error&lt;/strong&gt;: &lt;span&gt;Bad value &lt;code&gt;Expires&lt;/code&gt; for attribute &lt;code&gt;http-equiv&lt;/code&gt; on element &lt;a href=&quot;https://html.spec.whatwg.org/multipage/#the-meta-element&quot;&gt;&lt;code&gt;meta&lt;/code&gt;&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;location&quot;&gt;From line &lt;span class=&quot;first-line&quot;&gt;15&lt;/span&gt;, column &lt;span class=&quot;first-col&quot;&gt;1&lt;/span&gt;; to line &lt;span class=&quot;last-line&quot;&gt;15&lt;/span&gt;, column &lt;span class=&quot;last-col&quot;&gt;40&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;extract&quot;&gt;&lt;code&gt;-cache&quot;/&amp;gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&lt;b&gt;&amp;lt;meta http-equiv=&quot;Expires&quot; content=&quot;0&quot;/&amp;gt;&lt;/b&gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&lt;span class=&quot;lf&quot; title=&quot;Line break&quot;&gt;&#8617;&lt;/span&gt;&amp;lt;met&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p class=&quot;failure&quot;&gt;There were errors. (Tried in the text/html mode.)&lt;/p&gt;&lt;div class=&quot;details&quot;&gt;&lt;p class=&quot;msgmediatype&quot;&gt;Used the HTML parser. Externally specified character encoding was UTF-8.&lt;/p&gt;&lt;/div&gt;&lt;p class=&quot;stats&quot;&gt;Total execution time 46 milliseconds.&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;a href=&quot;https://about.validator.nu/&quot;&gt;About this Service&lt;/a&gt; &bull; &lt;a href=&quot;//validator.nu/&quot;&gt;More options&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</p></pre>
         </div>
       </div>
   </div>
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
       <a>Screenshot taken because this scenario is marked as FAILED</a>
-      <a href="embeddings/embedding_1306613737.png" download target="_blank">
+      <a href="embeddings/embedding_-676081383.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-8" class="collapse collapsable-details ">
+    <div id="embedding-7" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1306613737.png">
+        <img src="embeddings/embedding_-676081383.png">
       </div>
     </div>
   </div>

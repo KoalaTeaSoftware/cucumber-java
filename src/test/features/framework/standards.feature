@@ -7,3 +7,7 @@ Feature: Standards Compliance
   For example, Bootstrap 4' css will generate a load of error messages from this tester
     Given the w3C CSS tester reviews the file "http://koalateasoftware.com/index.css"
     Then the w3c CSS tester reports compliance
+
+  Scenario: HTML Compliance with W3C standards
+    Given the w3C HTML tester reviews the file "http://koalateasoftware.com"
+    Then the w3c HTML tester reports compliance

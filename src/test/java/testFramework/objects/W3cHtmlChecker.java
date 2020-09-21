@@ -21,7 +21,7 @@ public class W3cHtmlChecker {
 
         Context.defaultActor.getResource(fullUrl);
 
-        new WebDriverWait(Context.driver, Duration.ofSeconds(10)).until(ExpectedConditions.titleContains("results for "));
+        new WebDriverWait(Context.driver, Duration.ofSeconds(20)).until(ExpectedConditions.titleContains("results for "));
     }
 
     /**
@@ -35,6 +35,6 @@ public class W3cHtmlChecker {
          */
         String resultString = Context.driver.findElement(By.className("success")).getText();
 
-        return resultString.contains(" document validates according to the ");
+        return resultString.contains(" document is valid ");
     }
 }

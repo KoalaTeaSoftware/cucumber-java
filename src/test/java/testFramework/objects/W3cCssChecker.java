@@ -21,7 +21,7 @@ public class W3cCssChecker {
 
         Context.defaultActor.getResource(fullUrl);
 
-        new WebDriverWait(Context.driver, Duration.ofSeconds(3))
+        new WebDriverWait(Context.driver, Duration.ofSeconds(30))
                 // use the 'presence', i.e. is the element actually in the DOM - it may not be visible
                 .until(ExpectedConditions.titleContains("W3C CSS Validator results for "));
     }

@@ -67,6 +67,18 @@ public class ChromeActor extends Actor {
         }
 
         try {
+            String windowSize = Context.testConfiguration.getProperty("windowSize");
+            if (windowSize.length() > 0)
+                if (windowSize.toLowerCase().contains("max"))
+                    options.addArguments("start-maximized"); // https://stackoverflow.com/a/26283818/1689770
+                else
+                    options.addArguments("--window-size=" + Context.testConfiguration.getProperty("windowSize"));
+
+        } catch (NoSuchFieldException e) {
+            // do nothing if this property has not been defined
+        }
+
+        try {
             if (Context.testConfiguration.getProperty("headless").equalsIgnoreCase("true"))
                 options.addArguments("--headless"); // only if you are ACTUALLY running headless
         } catch (NoSuchFieldException e) {

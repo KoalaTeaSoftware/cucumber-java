@@ -5,6 +5,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import testFramework.Context;
+import testFramework.actors.Actor;
 
 import java.time.Duration;
 
@@ -39,7 +40,7 @@ public class W3cHtmlChecker {
         try {
             resultString = Context.driver.findElement(By.className("success")).getText();
         } catch (NoSuchElementException e) {
-            Context.defaultActor.writeToHtmlReport("Unable to find a success notice from :" + sut + ":");
+            Actor.writeToHtmlReport("Unable to find a success notice from :" + sut + ":");
             return false;
         }
 
@@ -50,7 +51,7 @@ public class W3cHtmlChecker {
             return true;
         }
         // make the default result to be failure
-        Context.defaultActor.writeToHtmlReport("Found no evidence of success using :" + sut + ":");
+        Actor.writeToHtmlReport("Found no evidence of success using :" + sut + ":");
         return false;
     }
 }

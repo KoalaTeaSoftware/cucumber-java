@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import testFramework.Context;
+import testFramework.actors.Actor;
 
 import java.time.Duration;
 
@@ -33,7 +34,7 @@ public class W3cLinkChecker {
     public Boolean fileValidates() {
         // the first h3 tells you the result
         if (Context.driver.findElement(By.tagName("h3")).getText().toLowerCase().contains("broken links")) {
-            Context.defaultActor.writeToHtmlReport("Found mention of broken links using :" + sut + ":");
+            Actor.writeToHtmlReport("Found mention of broken links using :" + sut + ":");
             // it definitely says there is a problem
             return false;
         }
@@ -43,7 +44,7 @@ public class W3cLinkChecker {
                 return true;
         }
         // failing anything good, default to failure
-        Context.defaultActor.writeToHtmlReport("Found no evidence of success using :" + sut + ":");
+        Actor.writeToHtmlReport("Found no evidence of success using :" + sut + ":");
         return false;
     }
 

@@ -1,5 +1,6 @@
 @functional
-Feature: Site Navigation
+Feature: Friendly URLs & Site Navigation
+  The site allows (and only really responds to) the use of friendly URLs. The Given steps exercise 'good' URLs
   This differs from the 'broken links' testing in that it demonstrates that the links in the nav bar take you
   to where you expect to be taken.
 
@@ -27,3 +28,12 @@ Feature: Site Navigation
       | http://koalateasoftware.com/software-quality-assurance | About                      | About                      |
       | http://koalateasoftware.com/software-quality-assurance | Web Site Development       | Web Site Development       |
       | http://koalateasoftware.com/software-quality-assurance | Software Quality Assurance | Software Quality Assurance |
+
+  Scenario Outline: Friendly response to bad URLs
+    Given I navigate to the page "<url>"
+    Then the page title is "<expectedPageTitle>"
+    Examples:
+      | url                                                     | expectedPageTitle    |
+      | http://koalateasoftware.com/web-suite-development       | Koala Tea Software   |
+      | http://koalateasoftware.com/about/nothing               | About                |
+      | http://koalateasoftware.com/web-site-development/disney | Web Site Development |

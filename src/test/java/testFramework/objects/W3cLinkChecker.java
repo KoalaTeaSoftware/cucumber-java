@@ -25,7 +25,7 @@ public class W3cLinkChecker {
 
         Context.defaultActor.getResource(sut);
 
-        new WebDriverWait(Context.driver, Duration.ofSeconds(90)).until(ExpectedConditions.presenceOfElementLocated(By.tagName("H3")));
+        new WebDriverWait(Context.driver, Duration.ofSeconds(120)).until(ExpectedConditions.presenceOfElementLocated(By.tagName("H3")));
     }
 
     /**

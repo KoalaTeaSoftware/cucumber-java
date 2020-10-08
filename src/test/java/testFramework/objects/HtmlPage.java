@@ -71,5 +71,9 @@ public class HtmlPage {
         }
     }
 
+    public String getFirstHeaderText() {
+        return myDriver.findElement(By.tagName("H1")).getText();
+    }
+
     private final WebDriver myDriver;
 }

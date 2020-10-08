@@ -9,18 +9,16 @@ Feature: Standards Compliance
     Then the w3c CSS tester reports compliance
     Examples:
       | file                                                |
-      | http://koalateasoftware.com/kts/essentialStyles.css |
-      | http://koalateasoftware.com/kts/remainingStyles.css |
+      | http://koalateasoftware.com/kts/stylesEssential.css |
+      | http://koalateasoftware.com/kts/stylesRemaining.css |
 
   Scenario Outline: HTML Compliance with W3C standards
     Given the w3C HTML tester reviews the file "<url>"
     Then the w3c HTML tester reports compliance
     Examples:
-      | url                                                    |
-      | http://koalateasoftware.com                            |
-      | http://koalateasoftware.com/about                      |
-      | http://koalateasoftware.com/web-site-development       |
-      | http://koalateasoftware.com/software-quality-assurance |
+      | url                               |
+      | http://koalateasoftware.com       |
+      | http://koalateasoftware.com/about |
 
   Scenario Outline: Check links on a page
     Given the w3c link checker reviews the file "<url>"
@@ -29,5 +27,3 @@ Feature: Standards Compliance
       | url                                                    |
       | http://koalateasoftware.com                            |
       | http://koalateasoftware.com/about                      |
-      | http://koalateasoftware.com/web-site-development       |
-      | http://koalateasoftware.com/software-quality-assurance |

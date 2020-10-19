@@ -1,9 +1,10 @@
 package testFramework.helpers;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class DateHelpers {
+public class Dates {
     /**
      * @param format - see https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
      * @return - now, reformatted so that can be used as a file name
@@ -15,8 +16,23 @@ public class DateHelpers {
     }
 
     /**
+     * With thanks to https://stackoverflow.com/users/1731824/lucasls
+     * at https://stackoverflow.com/questions/3471397/how-can-i-pretty-print-a-duration-in-java
+     *
+     * @param duration - the Duration object to make more pretty
+     * @return - pretty-printed string
+     */
+    public static String humanReadableDuration(Duration duration) {
+        return duration.toString()
+                .substring(2)
+                .replaceAll("(\\d[HMS])(?!$)", "$1 ".toLowerCase())
+                .toLowerCase();
+    }
+
+    /**
      * @return - now as a date-time stamp to fractions of a second
      */
+    @SuppressWarnings("SpellCheckingInspection")
     public static String uniqueFileName() {
         return formattedNow("yyyy-MM-dd_kkmmss_SSS");
     }

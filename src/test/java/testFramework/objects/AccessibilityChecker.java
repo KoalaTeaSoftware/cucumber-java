@@ -35,18 +35,18 @@ public class AccessibilityChecker {
 
         Context.defaultActor.getResource(fullUrl);
 
-        new WebDriverWait(Context.driver, Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(By.tagName("H3")));
+        new WebDriverWait(Context.defaultDriver, Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(By.tagName("H3")));
     }
 
     /**
      * @return - whether it contains text that indicates success, or failure
      */
     public Boolean fileValidates() {
-        if (Context.driver.findElement(By.tagName("h3")).getText().toLowerCase().contains("broken links"))
+        if (Context.defaultDriver.findElement(By.tagName("h3")).getText().toLowerCase().contains("broken links"))
             return false; // it definitely says there is a problem
 
         // otherwise, hunt for the p that specifically indicates success
-        for (WebElement p : Context.driver.findElements(By.tagName("p"))) {
+        for (WebElement p : Context.defaultDriver.findElements(By.tagName("p"))) {
             if (p.getText().equalsIgnoreCase("Valid links!"))
                 return true;
         }

@@ -12,16 +12,16 @@ import java.time.Duration;
 /**
  * All of the pages of this web site have common furniture (nav bar, contents-zone, footer)
  */
-public class PageFurniture {
+public class SutFurniture {
     final By mainNav = By.xpath("//*[@id='mainNav']//*[@class='navbar-nav']");
     final By lastElement = By.id("footer");
 
     /**
      * @param driver - asks for this in case you have a driver other than the default driver
      */
-    public PageFurniture(WebDriver driver) {
+    public SutFurniture(WebDriver driver) {
         myDriver = driver;
-        new WebDriverWait(Context.driver, Duration.ofSeconds(Context.pageLoadWait))
+        new WebDriverWait(Context.defaultDriver, Duration.ofSeconds(Context.pageLoadWait))
                 // use the 'presence', i.e. is the element actually in the DOM? - expect it to not be visible in plenty of cases
                 .until(ExpectedConditions.presenceOfElementLocated(lastElement));
     }

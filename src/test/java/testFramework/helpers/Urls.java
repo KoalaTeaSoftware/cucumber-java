@@ -29,11 +29,17 @@ public class Urls {
         matcher = REGEX.matcher(in);
         if (matcher.find()) {
             try {
-                result += matcher.group(1) == null ? Context.sutConfiguration.getProperty("defaultScheme") : matcher.group(1) + "://";
+                if (matcher.group(1) == null) {
+                    result += Context.sutConfiguration.getProperty("defaultScheme");
+                    if (!result.matches(".*://$")) // allow the default to be defined without the magic chars
+                        result += "://";
+                } else {
+                    result += matcher.group(1) + "://";
+                }
+
                 result += matcher.group(3) == null ? Context.sutConfiguration.getProperty("defaultHost") : matcher.group(3);
-                if (matcher.group(4) == null)
-                    result += "/";
-                else if (matcher.group(4).length() == 0)
+
+                if ((matcher.group(4) == null) || (matcher.group(4).length() == 0))
                     result += "/";
                 else
                     result += matcher.group(4).charAt(0) == '/' ? matcher.group(4) : '/' + matcher.group(4);

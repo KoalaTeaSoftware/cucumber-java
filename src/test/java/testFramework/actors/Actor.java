@@ -1,9 +1,6 @@
 package testFramework.actors;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import testFramework.Context;
 
 public abstract class Actor {
     /**
@@ -54,37 +51,6 @@ public abstract class Actor {
      */
     public void getResource(String fullURL) {
         getDriver().get(fullURL);
-    }
-
-    /**
-     * Just what is says on the tin.
-     *
-     * @param message - what you ant to see in the report
-     */
-    public static void writeToHtmlReport(String message) {
-        Context.scenario.write(message);
-    }
-
-    /**
-     * Defined within the actor because the different types of actor behave in different ways
-     * This definition is good for the various browsers and has to be overridden for the API and Appium actors
-     *
-     * @param message - what you want to se written in the report
-     */
-    public void writeScreenShotToHtmlReport(String message) {
-        TakesScreenshot ts = (TakesScreenshot) Context.defaultDriver;
-        byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
-
-        Context.scenario.embed(screenshot, "image/png", message);
-
-        /* for IE
-        BufferedImage image = new Robot().createScreenCapture(new    Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
-ImageIO.write(image, "png", new File("/screenshot.png"));
-         */
-    }
-
-    public void writePageSourceToHtmlReport() {
-        writeToHtmlReport(Context.defaultDriver.getPageSource());
     }
 
     protected abstract void startService();

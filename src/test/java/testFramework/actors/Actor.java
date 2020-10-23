@@ -3,11 +3,6 @@ package testFramework.actors;
 import org.openqa.selenium.WebDriver;
 
 public abstract class Actor {
-    /**
-     * Choose one of these when you instantiate your actor
-     */
-    public enum ActorType {
-    }
 
     public Actor() {
         startService();

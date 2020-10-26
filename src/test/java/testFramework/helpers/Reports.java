@@ -12,7 +12,7 @@ public class Reports {
     /**
      * Just what is says on the tin.
      *
-     * @param message - what you ant to see in the report
+     * @param message - what you want to see in the report
      */
     public static void writeToHtmlReport(String message) {
         Context.scenario.write(message);
@@ -22,7 +22,7 @@ public class Reports {
      * Defined within the actor because the different types of actor behave in different ways
      * This definition is good for the various browsers and has to be overridden for the API and Appium actors
      *
-     * @param message - what you want to se written in the report
+     * @param message - what you want to see written in the report
      */
     public static void writeScreenShotToHtmlReport(String message) {
         TakesScreenshot ts = (TakesScreenshot) Context.defaultDriver;
